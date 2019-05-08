@@ -1,5 +1,4 @@
 <?php
-if (getenv("DATABASE_URL")){
     $url = parse_url(getenv("DATABASE_URL"));
 
     return [
@@ -14,4 +13,3 @@ if (getenv("DATABASE_URL")){
         //'schemaCacheDuration' => 60,
         //'schemaCache' => 'cache',
     ];
-}
